@@ -1,7 +1,7 @@
 #include<stdio.h>
-int result(int n)
+long long int result(long long int n)
 {
-	int ans=1;
+	long long int ans=1;
 	for(int i=1;i<=n;i++)
 	{
 		ans*=2;
@@ -13,16 +13,16 @@ int main()
 	int n;
 	scanf("%d",&n);
 	printf("\n");
-	int a[100];
-	int inc=1;
-	int difference;
+	long long int a[100];
+	long long int inc=1;
+	long long int difference;
 	do
 	{
 		for(int i=0;i<n;i++)
 		{
 			a[i]=i+inc;
 		}
-		int sum=0;
+		long long int sum=0;
 		for(int i=0;i<n;i++)
 		{
 			sum+=a[i];
@@ -39,7 +39,7 @@ int main()
 	}
 	for(int i=0;i<=n;i++)
 	{
-		printf("%d",a[i]);
+		printf("%lld",a[i]);
 		printf("\n");
 	}
 	return 0;
